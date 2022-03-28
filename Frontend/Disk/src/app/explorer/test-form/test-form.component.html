@@ -1,0 +1,10 @@
+<input
+  #fileInput
+  hidden
+  type="file"
+  (input)="selectFile($event)"
+>
+
+<button mat-raised-button color="primary" (click)="fileInput.click()">Pick file</button>
+
+<button mat-raised-button color="primary" (click)="uploadFile()">Upload</button>
